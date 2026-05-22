@@ -36,6 +36,9 @@ Convierte el research en decisiones: roadmap, modelo de negocio/técnico, GTM y 
 
 Despachar `product-strategist` y `risk-manager` en **paralelo** — hacer ambas llamadas al Agent tool en el mismo mensaje. `research-synthesizer` espera a ambos.
 
+Al sintetizar, completar **todas** las secciones del template `core/templates/STRATEGY.md`:
+- **Suposiciones críticas**: el `risk-manager` debe incluir cada suposición con método de validación y plazo.
+
 ---
 
 ## Skills a invocar (según tipo de proyecto)

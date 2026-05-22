@@ -4,8 +4,12 @@
   "folder": "",
   "type": "",
   "description": "",
+
   "currentPhase": "01-inicio",
+
   "status": "active",
+  "_status_enum": ["active", "paused", "closed"],
+
   "createdAt": "",
   "lastRun": "",
   "pm": "",
@@ -21,16 +25,27 @@
     "enabled": true,
     "sessionDeadline": null,
     "radarAlertedAt": null,
-    "windowAlertedAt": null
+    "windowAlertedAt": null,
+    "logSensitiveData": false
   },
 
   "environmentAuditDone": false,
+  "conflictingSkills": [],
 
-  "phases": {},
+  "phases": {
+    "01-inicio":      { "startedAt": null, "closedAt": null },
+    "02-investigacion": { "startedAt": null, "closedAt": null },
+    "03-estrategia":  { "startedAt": null, "closedAt": null },
+    "04-ejecucion":   { "startedAt": null, "closedAt": null },
+    "04b-auditoria":  { "startedAt": null, "closedAt": null },
+    "05-cierre":      { "startedAt": null, "closedAt": null }
+  },
 
   "completedPhases": [],
 
   "inProgress": [],
 
-  "approvals": {}
+  "approvals": {
+    "_format": "{ \"fase\": \"01-inicio\", \"approvedAt\": \"\", \"approvedBy\": \"\" }"
+  }
 }

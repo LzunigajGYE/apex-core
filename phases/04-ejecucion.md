@@ -25,7 +25,7 @@ Traduce la estrategia en trabajo concreto. El flujo varía según el tipo de pro
 
 **Skills:**
 - `/writing-plans` — genera el plan de trabajo estructurado con tareas y owners
-- `agile-product-owner` — define backlog priorizado y criterios de aceptación
+- `agile-product-owner` — define backlog priorizado y **criterios de cierre del sprint** (sección obligatoria en `SPRINT.md`)
 
 **Agents:**
 - `project-manager` — tracking de avance, dependencias, riesgos de ejecución

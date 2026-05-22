@@ -19,7 +19,7 @@ Revisión sistemática antes de cerrar o entregar. Detecta hallazgos críticos �
 
 ## Flujo de auditoría
 
-APEX ejecuta la auditoría directamente con los skills — no despacha agents en esta fase.
+APEX ejecuta la auditoría **directamente** — no despacha agents externos. Los "skills" listados son **roles de análisis que APEX desempeña inline**, leyendo el código/documentos del proyecto y produciendo los hallazgos. Si Caveman está disponible, `caveman:caveman-review` es el único skill externo que se invoca.
 
 ### Tipo `software` / `mixed`
 

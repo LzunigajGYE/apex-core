@@ -8,8 +8,16 @@
 #   PHASE_START     — fase iniciada
 #   PHASE_END       — fase cerrada con aprobación del PM
 #   DECISION        — decisión documentada (técnica, negocio, scope)
+#                     Formato DETAIL: "descripcion | reviewed:false"
+#                     Marcar reviewed:true cuando el PM confirme revisión en sesión
 #   TASK            — tarea creada, modificada o completada
 #   WINDOW_ALERT    — alerta de ventana horaria enviada al PM
 #   SESSION_END     — cierre de sesión registrado por PM
 #   OUT_OF_HOURS    — actividad detectada fuera de horario laboral
+#                     NOTA: si logSensitiveData:false en apex.config.json,
+#                     omitir paths absolutos — usar solo nombre de proyecto
+#
+# WIND_DOWN timing: calculado dinámicamente como 90 min antes de workHours.end
+#   Ejemplo: workHours.end = "18:00" → WIND_DOWN a las 16:30 → cron "33 16 * * [workDays]"
+#            workHours.end = "17:00" → WIND_DOWN a las 15:30 → cron "33 15 * * [workDays]"
 #

@@ -33,6 +33,9 @@ Despachar en **paralelo** — hacer las 3 llamadas al Agent tool en el mismo men
 
 **Síntesis posterior**: esperar a que los 3 terminen, luego sintetizar hallazgos cruzados en `RESEARCH.md`.
 
+Al sintetizar, completar **todas** las secciones del template `core/templates/RESEARCH.md`:
+- **Fuentes**: cada agente debe reportar sus fuentes; consolidarlas en la tabla antes de entregar al PM.
+
 ---
 
 ## Skills a invocar
