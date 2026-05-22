@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "project": "",
   "folder": "",
-  "type": "software|strategy|marketing|mixed",
+  "type": "",
   "description": "",
   "currentPhase": "01-inicio",
   "status": "active",
@@ -10,13 +10,27 @@
   "lastRun": "",
   "pm": "",
 
+  "workCalendar": {
+    "timezone": "America/Guayaquil",
+    "workDays": [1, 2, 3, 4, 5],
+    "workHours": { "start": "09:00", "end": "18:00" },
+    "holidays": []
+  },
+
+  "timeTracking": {
+    "enabled": true,
+    "sessionDeadline": null,
+    "radarAlertedAt": null,
+    "windowAlertedAt": null
+  },
+
   "environmentAuditDone": false,
+
+  "phases": {},
 
   "completedPhases": [],
 
   "inProgress": [],
-
-  "pendingPlanning": [],
 
   "approvals": {}
 }

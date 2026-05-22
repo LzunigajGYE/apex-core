@@ -87,7 +87,9 @@ No genera un documento nuevo — **agrega una entrada a `LOG.md`**:
 - [ ] Todos los hallazgos críticos resueltos y documentados en LOG.md
 - [ ] Hallazgos altos resueltos o con deuda documentada y plan
 - [ ] PM aprueba explícitamente el cierre de la auditoría
-- [ ] `apex.config.json` actualizado: `currentPhase → 05-cierre`
+- [ ] `apex.config.json` actualizado: `currentPhase → 05-cierre`, `phases.04b-auditoria.closedAt` con timestamp actual
+
+> **Regla: una fase por sesión.** Al completar este gate, informar al PM y cerrar la fase. No iniciar Fase 05 en la misma sesión.
 
 ---
 
@@ -99,11 +101,11 @@ Mantener **`caveman full`** activo — los reviews deben ser directos y sin rell
 
 ## Qué escribir a memoria al cerrar
 
-**`patterns.md`:**
+**`~/.claude/apex/patterns.md`:**
 - Tipo de hallazgos más frecuentes en este tipo de proyecto (seguridad / calidad / consistencia)
 - Severidades promedio encontradas
 - ¿La auditoría descubrió algo que debería haberse detectado antes?
 
-**`pm-profile.md`:**
+**`~/.claude/apex/pm-profile.md`:**
 - Tolerancia del PM ante hallazgos altos (¿los resolvió o los documentó como deuda?)
 - ¿El PM cuestionó alguna clasificación de severidad?

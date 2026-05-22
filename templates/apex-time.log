@@ -1,0 +1,15 @@
+# APEX Time Log — [project]
+# Timezone: [timezone]
+# Format: TIMESTAMP | EVENT | PHASE | DETAIL
+#
+# EVENT types:
+#   DAY_START       — inicio de jornada laboral detectado
+#   NIGHT_START     — inicio de jornada nocturna detectado (registro silencioso)
+#   PHASE_START     — fase iniciada
+#   PHASE_END       — fase cerrada con aprobación del PM
+#   DECISION        — decisión documentada (técnica, negocio, scope)
+#   TASK            — tarea creada, modificada o completada
+#   WINDOW_ALERT    — alerta de ventana horaria enviada al PM
+#   SESSION_END     — cierre de sesión registrado por PM
+#   OUT_OF_HOURS    — actividad detectada fuera de horario laboral
+#

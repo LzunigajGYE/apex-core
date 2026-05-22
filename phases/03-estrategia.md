@@ -34,7 +34,7 @@ Convierte el research en decisiones: roadmap, modelo de negocio/técnico, GTM y 
 | `risk-manager` | PROJECT.md + RESEARCH.md + Grupo C | Risk register con probabilidad, impacto y mitigación |
 | `research-synthesizer` | Outputs de los otros dos agentes | Síntesis coherente → draft de STRATEGY.md |
 
-Despachar `product-strategist` y `risk-manager` en paralelo. `research-synthesizer` espera a ambos.
+Despachar `product-strategist` y `risk-manager` en **paralelo** — hacer ambas llamadas al Agent tool en el mismo mensaje. `research-synthesizer` espera a ambos.
 
 ---
 
@@ -72,18 +72,20 @@ Despachar `product-strategist` y `risk-manager` en paralelo. `research-synthesiz
 **Condición para avanzar a Fase 04:**
 - [ ] PM aprueba `STRATEGY.md` — especialmente roadmap y risk register
 - [ ] Los riesgos críticos (Grupo C) tienen mitigación documentada
-- [ ] `apex.config.json` actualizado: `currentPhase → 04-ejecucion`
+- [ ] `apex.config.json` actualizado: `currentPhase → 04-ejecucion`, `phases.03-estrategia.closedAt` con timestamp actual
+
+> **Regla: una fase por sesión.** Al completar este gate, informar al PM y cerrar la fase. No iniciar Fase 04 en la misma sesión.
 
 ---
 
 ## Qué escribir a memoria al cerrar
 
-**`patterns.md`:**
+**`~/.claude/apex/patterns.md`:**
 - Tipo de riesgos más comunes en esta industria/tipo de proyecto
 - Decisiones de roadmap más frecuentemente debatidas
 - ¿Qué sección de STRATEGY.md requirió más iteración?
 
-**`pm-profile.md`:**
+**`~/.claude/apex/pm-profile.md`:**
 - ¿El PM propuso su propio roadmap o adoptó el propuesto?
 - Nivel de tolerancia al riesgo observado
 - ¿Usó datos del research para argumentar o tomó decisiones por intuición?

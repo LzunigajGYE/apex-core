@@ -58,11 +58,11 @@ Traduce la estrategia en trabajo concreto. El flujo varía según el tipo de pro
 
 | Keywords en PROJECT.md | Agent recomendado |
 |------------------------|-------------------|
-| Next.js, React, Vue, frontend | `senior-frontend` |
-| Python, FastAPI, Django, Node, backend | `senior-backend` |
-| Docker, Kubernetes, Terraform, infra | `senior-devops` |
-| AI, LLM, Claude, Gemini, embeddings | `senior-prompt-engineer` |
-| Data, pipeline, ETL, SQL | `senior-data-engineer` |
+| Next.js, React, Vue, frontend, interfaz, componente | `senior-frontend` |
+| Python, FastAPI, Django, Node, backend, API, servidor | `senior-backend` |
+| Docker, Kubernetes, Terraform, infra, infraestructura, nube | `senior-devops` |
+| AI, LLM, Claude, Gemini, embeddings, modelo, agente, IA | `senior-prompt-engineer` |
+| Data, pipeline, ETL, SQL, datos, análisis, base de datos | `senior-data-engineer` |
 | No detectado | Preguntar al PM |
 
 **Output:** `SPRINT.md` + plan en `docs/superpowers/plans/`
@@ -93,7 +93,9 @@ Traduce la estrategia en trabajo concreto. El flujo varía según el tipo de pro
 - [ ] Sprint completado (todos los criterios de cierre cumplidos)
 - [ ] `SPRINT.md` actualizado con estado final
 - [ ] PM aprueba el output de ejecución
-- [ ] `apex.config.json` actualizado: `currentPhase → 04b-auditoria`
+- [ ] `apex.config.json` actualizado: `currentPhase → 04b-auditoria`, `phases.04-ejecucion.closedAt` con timestamp actual
+
+> **Regla: una fase por sesión.** Al completar este gate, informar al PM y cerrar la fase. No iniciar Fase 04b en la misma sesión.
 
 ---
 
@@ -105,12 +107,12 @@ Activar **`caveman full`** al inicio de esta fase — velocidad máxima durante 
 
 ## Qué escribir a memoria al cerrar
 
-**`patterns.md`:**
+**`~/.claude/apex/patterns.md`:**
 - Stack detectado + agentes más útiles en este tipo de proyecto
 - Tareas que más se expandieron vs estimación inicial
 - Bloqueos recurrentes en este tipo de proyecto
 
-**`pm-profile.md`:**
+**`~/.claude/apex/pm-profile.md`:**
 - ¿El PM hizo micromanagement o delegó completamente?
 - Frecuencia de checkpoints pedidos
 - ¿Prefirió worktrees o trabajo en rama directa?

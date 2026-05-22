@@ -23,7 +23,7 @@ Construye el mapa de contexto externo: mercado, competencia y tendencias. Produc
 
 ## Agents a despachar
 
-Despachar en **paralelo** — los 3 trabajan simultáneamente:
+Despachar en **paralelo** — hacer las 3 llamadas al Agent tool en el mismo mensaje:
 
 | Agent | Input | Output esperado |
 |-------|-------|----------------|
@@ -31,7 +31,7 @@ Despachar en **paralelo** — los 3 trabajan simultáneamente:
 | `competitive-analyst` | PROJECT.md + lista de competidores | Benchmarking, gaps, posicionamiento |
 | `trend-analyst` | PROJECT.md + horizonte temporal | Tendencias emergentes con curvas de adopción |
 
-**Síntesis posterior**: una vez los 3 terminan, sintetizar hallazgos cruzados en `RESEARCH.md`.
+**Síntesis posterior**: esperar a que los 3 terminen, luego sintetizar hallazgos cruzados en `RESEARCH.md`.
 
 ---
 
@@ -67,17 +67,19 @@ Despachar en **paralelo** — los 3 trabajan simultáneamente:
 **Condición para avanzar a Fase 03:**
 - [ ] PM aprueba síntesis de investigación en `RESEARCH.md`
 - [ ] Las preguntas estratégicas del Grupo B tienen respuesta
-- [ ] `apex.config.json` actualizado: `currentPhase → 03-estrategia`
+- [ ] `apex.config.json` actualizado: `currentPhase → 03-estrategia`, `phases.02-investigacion.closedAt` con timestamp actual
+
+> **Regla: una fase por sesión.** Al completar este gate, informar al PM y cerrar la fase. No iniciar Fase 03 en la misma sesión.
 
 ---
 
 ## Qué escribir a memoria al cerrar
 
-**`patterns.md`:**
+**`~/.claude/apex/patterns.md`:**
 - ¿Qué agente produjo los hallazgos más útiles para este tipo de proyecto?
 - ¿Qué sección de RESEARCH.md requirió más iteración?
 - Tipo de preguntas estratégicas más frecuentes en esta industria
 
-**`pm-profile.md`:**
+**`~/.claude/apex/pm-profile.md`:**
 - ¿El PM leyó el research completo o pidió resumen ejecutivo?
 - ¿Cuántos ciclos de revisión antes de aprobar?

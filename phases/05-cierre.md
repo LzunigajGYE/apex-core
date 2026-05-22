@@ -28,7 +28,7 @@ Produce el entregable final, documenta lecciones aprendidas y cierra formalmente
 | `research-synthesizer` | Todos los docs + LOG.md | Síntesis de lecciones aprendidas |
 | `data-analyst` | Métricas y resultados del proyecto (si aplica) | Análisis cuantitativo de resultados |
 
-`report-generator` y `research-synthesizer` en paralelo. `data-analyst` solo si hay datos cuantitativos.
+Despachar `report-generator` y `research-synthesizer` en **paralelo** — hacer ambas llamadas al Agent tool en el mismo mensaje. `data-analyst` solo si hay datos cuantitativos.
 
 ---
 
@@ -66,19 +66,19 @@ Produce el entregable final, documenta lecciones aprendidas y cierra formalmente
 - [ ] PM aprueba `CLOSE.md` y el entregable final
 - [ ] Retrospectiva completada (Grupo B documentado)
 - [ ] Pendientes capturados en `apex.config.json → inProgress` o nuevo ciclo
-- [ ] `apex.config.json` actualizado: `status → closed`, `currentPhase → done`
+- [ ] `apex.config.json` actualizado: `status → closed`, `currentPhase → done`, `phases.05-cierre.closedAt` con timestamp actual
 
 ---
 
 ## Actualización de memoria al cerrar el proyecto
 
-**`patterns.md`** — actualización completa:
+**`~/.claude/apex/patterns.md`** — actualización completa:
 - Tipo de proyecto, industria, duración total
 - Agentes más útiles por fase
 - Documentos que más iteraron
 - Decisiones más comunes tomadas
 
-**`pm-profile.md`** — actualización completa:
+**`~/.claude/apex/pm-profile.md`** — actualización completa:
 - Incrementar `projects_count`
 - Agregar proyecto a `proyectos[]` con tipo, industria, última fase, aprendizaje clave
 - Refinar `velocidad`, `enfoque`, `acepta_recomendaciones` según comportamiento observado en todo el proyecto
