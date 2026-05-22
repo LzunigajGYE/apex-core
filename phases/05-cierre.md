@@ -66,7 +66,12 @@ Despachar `report-generator` y `research-synthesizer` en **paralelo** — hacer 
 - [ ] PM aprueba `CLOSE.md` y el entregable final
 - [ ] Retrospectiva completada (Grupo B documentado)
 - [ ] Pendientes capturados en `apex.config.json → inProgress` o nuevo ciclo
-- [ ] `apex.config.json` actualizado: `status → closed`, `currentPhase → done`, `phases.05-cierre.closedAt` con timestamp actual
+- [ ] `apex.config.json` actualizado:
+  - `status → "closed"` (única fase que hace esta transición — acción explícita requerida)
+  - `currentPhase → "done"`
+  - `phases.05-cierre.closedAt` con timestamp actual
+
+> **Regla de cierre:** Fase 05 es terminal — no hay fase siguiente. La regla "una fase por sesión" no aplica aquí, pero el gate debe completarse íntegramente antes de cerrar la sesión.
 
 ---
 
