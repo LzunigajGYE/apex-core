@@ -96,6 +96,8 @@ Reemplazar `/brainstorming` con proceso interno:
 
 > **Regla: una fase por sesión.** Al completar este gate, informar al PM y cerrar la fase. No iniciar Fase 02 en la misma sesión.
 
+**Al confirmar el gate:** ejecutar **Módulo Dashboard** (ver `SKILL.md → Módulo Dashboard`) antes de cerrar la sesión.
+
 ---
 
 ## Qué escribir a memoria al cerrar
